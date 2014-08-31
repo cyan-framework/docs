@@ -1,0 +1,44 @@
+/* code formating style */
+.token.operator {
+    color: #f4645f;
+}
+.token.scope {
+    color: #5b71bd;
+}
+.token.scope .token.punctuation {
+    color: #f4645f;
+}
+.token.variable {
+    color: #000;
+}
+.token.property {
+    color: #000;
+}
+.token.function {
+    color: #5b71bd;
+}
+.token.comment {
+    color: #b8b8bf;
+}
+.token.punctuation {
+    color: #000;
+}
+pre.language-php {
+    background-color: #fff;
+}
+/**
+ * Section
+ */
+.tm-section .uk-heading-large { margin-bottom: 20px; }
+.tm-section .uk-text-large { margin-bottom: 60px; }
+
+.tm-section-color-1 { background: #2ba3d4 50% 50% no-repeat; }
+
+/* Desktop and bigger */
+@media (max-width: 959px) {
+
+    .tm-section-color-1 { background-image: none; }
+
+}
+
+.tm-section-color-2 { background: #3dc0f1; }

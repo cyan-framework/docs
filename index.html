@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <title>Cyan Framework.</title>
+    <link rel="stylesheet" href="assets/css/uikit.min.css" />
+    <link rel="stylesheet" href="assets/css/prism.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/prism.min.js"></script>
+</head>
+<body>
+        <div class="tm-section tm-section-color-1 tm-section-colored">
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+
+            <div class="uk-vertical-align uk-text-center uk-margin-top">
+                <div class="uk-vertical-align-middle uk-width-1-2">
+                    <a href="guides.html" class="uk-button uk-button-large">Quickstart</a>
+
+                    <div class="uk-panel-box uk-margin-top" style="background-color: #ebebeb; padding: 5px 10px; border-radius: 8px 8px 0 0;">
+                        <div class="uk-text-left">
+                            <i class="uk-icon-circle" style="color: #e36b6b;"></i>
+                            <i class="uk-icon-circle" style="color: #e8d38e;"></i>
+                            <i class="uk-icon-circle" style="color: #bbe090;"></i>
+                        </div>
+                    </div>
+                    <pre data-start="1" class="line-numbers" style="margin-top: 0; margin-bottom: 0;"><code class="language-php">/**
+ * Post API
+ */
+
+$Cyan->Router->get('post/cyan_int:post_id', function($post_id){
+    return sprintf('Reading blog post id: %i',intval($post_id));
+});
+
+$Cyan->Router->post('post', function(){
+    return 'Created post/' . uniqueid();
+});
+
+$Cyan->Router->put('post/cyan_int:post_id', function($post_id){
+    return sprintf('Updating blog post id: %i',intval($post_id));
+});
+
+$Cyan->Router->delete('post/cyan_int:post_id', function($post_id){
+    return sprintf('Removing blog post id: %i',intval($post_id));
+});</code></pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="uk-container uk-container-center uk-margin-top">
+    <div class="uk-text-center">
+    <img src="images/logo.png" />
+    </div>
+    <hr class="uk-grid-divider">
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-3">
+            <div class="uk-grid">
+                <div class="uk-width-1-6">
+                    <i class="uk-icon-code uk-icon-large uk-text-primary"></i>
+                </div>
+                <div class="uk-width-5-6">
+                    <h2 class="uk-h3">Less Coding</h2>
+                    <p>Write dramatically less code with Cyan.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-width-medium-1-3">
+            <div class="uk-grid">
+                <div class="uk-width-1-6">
+                    <i class="uk-icon-star-o uk-icon-large uk-text-primary"></i>
+                </div>
+                <div class="uk-width-5-6">
+                    <h2 class="uk-h3">Composer Ready</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-width-medium-1-3">
+            <div class="uk-grid">
+                <div class="uk-width-1-6">
+                    <i class="uk-icon-random uk-icon-large uk-text-primary"></i>
+                </div>
+                <div class="uk-width-5-6">
+                    <h2 class="uk-h3">RESTful Routing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-3">
+            <div class="uk-grid">
+                <div class="uk-width-1-6">
+                    <i class="uk-icon-cubes uk-icon-large uk-text-primary"></i>
+                </div>
+                <div class="uk-width-5-6">
+                    <h2 class="uk-h3">Modular</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-width-medium-1-3">
+            <div class="uk-grid">
+                <div class="uk-width-1-6">
+                    <i class="uk-icon-bolt uk-icon-large uk-text-primary"></i>
+                </div>
+                <div class="uk-width-5-6">
+                    <h2 class="uk-h3">Fast</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-width-medium-1-3">
+            <div class="uk-grid">
+                <div class="uk-width-1-6">
+                    <i class="uk-icon-folder-open uk-icon-large uk-text-primary"></i>
+                </div>
+                <div class="uk-width-5-6">
+                    <h2 class="uk-h3">Sample Heading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="uk-grid-divider">
+</div>
+
+<div class="tm-section tm-section-color-2 tm-section-colored">
+    <div class="uk-container uk-container-center uk-text-center">
+        <h1 class="uk-heading-large uk-margin-bottom-remove">Open Source</h1>
+        <p class="uk-text-large">Cyan is an open source framework to make php fun and easy.<br class="uk-hidden-small">Create your own app and discover the unlimited use of Cyan.</p>
+
+        <div data-uk-grid-margin="" class="uk-grid uk-grid-divider">
+
+            <div class="uk-width-1-1 uk-width-medium-1-3">
+                <div class="uk-panel">
+                    <h2>GPL License</h2>
+                    <p>Cyan is absolutely free of charge and you can use, copy, merge, publish and distribute the framework without any limitations.</p>
+                </div>
+            </div>
+
+            <div class="uk-width-medium-1-3">
+                <div class="uk-panel">
+                    <h2>Our Heros</h2>
+                    <p>A big thanks to Ember, jQuery, Handlebars and many others 3rd libraries. Cyan wouldn't be possible without inspiration of these awesome open source projects.</p>
+                </div>
+            </div>
+
+            <div class="uk-width-medium-1-3">
+                <div class="uk-panel">
+                    <h2>Active Development</h2>
+                    <p>Cyan is built by <a href="https://twitter.com/juliopontes">juliopontes</a>, using their extensive experience in creating php applications and Joomla! solutions.</p>
+                </div>
+            </div>
+
+        </div>
+        <br />
+
+    </div>
+</div>
+<div class="uk-grid" data-uk-grid-margin>
+    <div class="uk-width-medium-1-1">
+        <div class="uk-panel uk-panel-box uk-text-center">
+            <p><strong>Cyan</strong> 2014. <a target="_blank" class="uk-button uk-button-primary uk-margin-left" href="http://twitter.com/CyanFramework">@cyanframework</a></p>
+        </div>
+    </div>
+</div></body>
+</html>
